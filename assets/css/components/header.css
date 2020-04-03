@@ -1,0 +1,222 @@
+/* CSS Header */
+.header {
+    height: 7rem;
+    align-items: center;
+    position: relative;
+    transition: 1s all;
+}
+
+.header-logo {
+    height: 4rem;
+    width: 5.4rem;
+    background-image : url('/assets/images/logo.png');
+    background-size: cover;
+}
+.header__other {
+    flex-grow: 1; 
+    display: flex;
+}
+.header__search {
+    flex-grow: 1; 
+    flex-direction: row-reverse;
+    display: flex;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+.header__search-input{
+    height: 0rem;
+    width: 0rem;
+    border: 1px solid var(--text-title-color);
+    outline: none;
+    opacity: 1;
+    border-radius: 3rem;
+    transition: .3s all;
+    opacity: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.header__search-icon{
+    font-size: 2.5rem;
+    color: var(--text-title-color);
+    margin-left: .2rem;
+}
+
+.header__search-status{
+    display: none;
+}
+.header__search-status:checked ~ .header__search-input {
+    opacity: 1;
+    width: 90%;
+    height: 2.5rem;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 5.4rem;
+    position: relative;
+}
+.header__menu-line {
+    width: 3.5rem;
+    height: 0.4rem;
+    background-color: var(--text-title-color);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: center;
+    transition: 1s all;
+}
+.header__menu-status {
+    display: none;
+}
+.header__menu-status:checked + .header__menu {
+    justify-content: center;
+}
+.header__menu-status:checked + .header__menu > .header__menu-line:nth-child(2) {
+    opacity: 0;
+}
+
+.header__menu-status:checked + .header__menu > .header__menu-line:nth-child(1) {
+    transform: translateY(100%) rotate(225deg);
+}
+
+.header__menu-status:checked + .header__menu > .header__menu-line:nth-child(3) {
+    transform: translateY(-100%) rotate(-225deg);
+}
+
+.header__menuList {
+    transition: all 1s;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top : 6.9rem;
+    opacity: 0;
+    height: 0;
+    list-style: none;
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-title-color);
+    background-color: #EEE;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.header__menuList a {
+    text-decoration: none;
+    display: block;
+    line-height: 5rem;
+    color: var(--text-title-color);
+}
+
+.header__menu-status:checked ~ .header__menuList{
+    opacity: 1;
+    height: 100vh;  
+    display: block;
+}
+
+.header__menu-status:checked ~ .header__menuList li {
+    display: block;
+}
+
+.header__menuItem {
+    height: 5rem;
+    border-bottom: 1px solid rgb(35,172,153,0.2);
+}
+
+.header__contact {
+    text-align: center;
+    margin: 5rem auto 0;
+}
+
+.header__slider {
+    width: 100%;
+    padding-top: 35%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  .header-slide {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .header-slide p {
+    color: crimson;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  .header-slide:nth-child(1) {
+    left: 0;
+    background-image: url("/assets/images/cover1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header-slide:nth-child(2) {
+    left: 100%;
+    background-image: url("/assets/images/cover2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header-slide:nth-child(3) {
+    left: 100%;
+    background-image: url("/assets/images/cover3.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header-slide:nth-child(4) {
+    left: 100%;
+    background-image: url("/assets/images/news-cover.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header-arr {
+    color : white;
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    font-weight: 100;
+  }
+  
+  .header-btn-left {
+    transform: translateY(-50%) translateX(100%);
+  }
+  
+  .header-btn-right {
+    right: 0;
+    transform: translateY(-50%) translateX(-100%);
+  }
+  
+  .header-dotList {
+      position: absolute;
+      bottom : 10%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  .header-dot {
+      --size-dot : 1.2rem;
+    height: var(--size-dot);
+    width: var(--size-dot);
+    background-color: #707070;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1.5rem;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .header-dot.active {
+      background-color: var(--primate-color);
+  }

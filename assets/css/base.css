@@ -1,0 +1,24 @@
+@import "reset.css";
+@import "grid.css";
+@import "responsive.css";
+
+:root {
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color : #333;
+    --text-title-color : #23AC99;
+    --primate-color : #FE7A3D;
+    --text-content-color : #8d90a6;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+

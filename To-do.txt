@@ -1,0 +1,5 @@
+---------------- MOBILE LAYOUT --------------
+1. Header_nav-menu : vietel.vn
+    - First Menu bar : timsim.com
+2. Header slide : thegioididong.com
+3. Second Menu bar : thegioididong.com

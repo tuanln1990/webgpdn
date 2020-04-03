@@ -1,0 +1,38 @@
+
+/* Mobile */
+@media (max-width : 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+/* Tablet */
+@media (min-width : 740px) and (max-width : 1023px) {
+    .hide-on-tablet {
+        display: none !important;
+    }
+
+}
+
+/*  PC low resolution */
+@media (min-width : 1024px) and  (max-width : 1239px) {
+   
+}
+
+/* PC medium resulotion */
+@media (min-width: 1113px) {
+  
+}
+
+/* PC */
+@media (min-width : 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+    .footer__contact {
+        text-align: center;
+        font-size: 1.5;
+    }
+    .header {
+        display: none;
+    }
+}
