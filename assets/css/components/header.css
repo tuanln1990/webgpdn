@@ -125,6 +125,7 @@
 }
 
 .header__menuItem {
+    display: none;
     height: 5rem;
     border-bottom: 1px solid rgb(35,172,153,0.2);
 }
@@ -220,3 +221,84 @@
   .header-dot.active {
       background-color: var(--primate-color);
   }
+
+
+  /* CSS header PC */
+.header_pc {
+    position: relative;
+}
+.header_pc__topChild {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.header_pc__searchbox {
+    position: relative;
+    width: 30rem;
+}
+.header_pc__searchInput {
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--text-title-color);
+    outline: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.header_pc__searchLogo {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.3rem;
+    color: var(--text-title-color);;
+}
+.header_pc_contactInfo {
+    background-color: var(--primate-color);
+    padding : 0 2rem;
+    margin-left: 2rem;
+    color: white;
+    font-size: 1.4rem;
+}
+.header_pc__menu {
+    background-color: var(--text-title-color);
+}
+.header_pc__menulist {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    height: 6rem;
+    font-size: 1.6rem;
+}
+.header_pc__menuitem {
+    margin-left: 3rem;
+}
+.header_pc_menuitem_link {
+    color: white;
+    line-height: 6rem;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+}
+.header_pc__logo_box {
+    position: absolute;
+    height: 11.3rem;
+    width: 15.2356rem;
+    left: 0;
+    top: 0; 
+    background-color: white;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_pc__logo {
+    width: 80%;
+    height: 80%;
+    background-image: url(/assets/images/logo.png);
+    background-size: cover;
+}

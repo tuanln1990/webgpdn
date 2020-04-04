@@ -10,6 +10,9 @@
     .hide-on-tablet {
         display: none !important;
     }
+    .product__title {
+        margin-top: 0;
+    }
 
 }
 
@@ -20,7 +23,6 @@
 
 /* PC medium resulotion */
 @media (min-width: 1113px) {
-  
 }
 
 /* PC */
@@ -34,5 +36,15 @@
     }
     .header {
         display: none;
+    }
+    
+    .product__header {
+        margin-top: 1.5rem;
+    }
+    .product__title {
+        margin-top: 0;
+    }
+    .product__container {
+        display: block !important;
     }
 }

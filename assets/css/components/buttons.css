@@ -1,0 +1,14 @@
+.mainButton {
+    background-color: var(--primate-color);
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 2rem;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    transition: color .5s;
+}
+
+.mainButton:hover {
+    color: var(--text-title-color);
+    cursor: pointer;
+}

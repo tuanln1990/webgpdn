@@ -22,3 +22,11 @@ html {
     box-sizing: inherit;
 }
 
+.UpperBold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.greenColor {
+    color: green;
+}

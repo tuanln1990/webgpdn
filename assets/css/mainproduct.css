@@ -1,0 +1,90 @@
+@import "base.css";
+@import "components/header.css";
+@import "components/buttons.css";
+
+/* CSS product cover */
+.product__header {
+
+}
+.product__cover {
+    background-image: url(/assets/images/vtracking\ cover.PNG);
+    background-size: cover;
+    padding-top: 60%;
+}
+.product__introduce {
+
+}
+.product__title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+}
+.product__introduce_paragraph {
+    font-size: 1.5rem;
+}
+.product__hotline {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.product__hotline_phone {
+    color: var(--primate-color);
+}
+
+.product__header_btn {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* CSS content */
+.product_tab {
+    display: flex;
+    margin-left: 4px;
+}
+.product__tabItem {
+    padding: .5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.product__tabItem_active {
+    border-top: 1px solid var(--text-title-color);
+    background-color: #F3F7F8;
+}
+
+
+
+.product__container {
+    background-color: #F3F7F8;
+    display: none
+}
+.product__container-active {
+    display: block
+}
+.product__content_mainTitle {
+
+}
+.product__contentBox {
+
+}
+.product__content {
+
+}
+.product__content_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--text-title-color);
+    margin-top: 4rem;
+}
+.product__content_row {
+    padding: 0 3rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 1.5rem;
+}
