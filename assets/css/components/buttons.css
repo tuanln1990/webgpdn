@@ -12,3 +12,11 @@
     color: var(--text-title-color);
     cursor: pointer;
 }
+
+.twoBorderRadiusbtn {
+    background-color: var(--primate-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}

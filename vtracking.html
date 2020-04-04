@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vtracking</title>
     <link rel="stylesheet" href="assets/css/mainproduct.css" />
     <link
@@ -13,417 +13,677 @@
       rel="stylesheet"
       href="assets/fonts/fontawesome-free-5.12.1-web/css/all.css"
     />
-</head>
-<body>
-  <div class="grid wide">
-    <div class="header row m-no-gutters">
-      <a href="index.html" class="header-logo"></a>
-      <div class="header__other m-no-gutters row">
-        <div class="header__search">
+  </head>
+  <body>
+    <div class="grid wide">
+      <div class="header row m-no-gutters">
+        <a href="index.html" class="header-logo"></a>
+        <div class="header__other m-no-gutters row">
+          <div class="header__search">
+            <input
+              type="checkbox"
+              name=""
+              id="header__search-status"
+              class="header__search-status"
+            />
+            <label class="header__search-icon" for="header__search-status">
+              <i class="fas fa-search"></i>
+            </label>
+            <input class="header__search-input" type="text" />
+          </div>
           <input
             type="checkbox"
             name=""
-            id="header__search-status"
-            class="header__search-status"
+            id="header__menu-status"
+            class="header__menu-status"
           />
-          <label class="header__search-icon" for="header__search-status">
-            <i class="fas fa-search"></i>
+          <label for="header__menu-status" class="header__menu hide-on-pc">
+            <div class="header__menu-line"></div>
+            <div class="header__menu-line"></div>
+            <div class="header__menu-line"></div>
           </label>
-          <input class="header__search-input" type="text" />
-        </div>
-        <input
-          type="checkbox"
-          name=""
-          id="header__menu-status"
-          class="header__menu-status"
-        />
-        <label for="header__menu-status" class="header__menu hide-on-pc">
-          <div class="header__menu-line"></div>
-          <div class="header__menu-line"></div>
-          <div class="header__menu-line"></div>
-        </label>
-        <ul class="header__menuList">
-          <li class="header__menuItem"><a href="#">Trang chủ</a></li>
-          <li class="header__menuItem"><a href="#">Định vị xe máy</a></li>
-          <li class="header__menuItem">
-            <a href="vtracking.html">Định vị ô tô (Hộp đen)</a>
-          </li>
-          <li class="header__menuItem">
-            <a href="#">
-              Sản phẩm dịch vụ Viettel khác
-            </a>
-          </li>
-          <li class="header__menuItem"><a href="#">Phụ kiện đi kèm</a></li>
-          <li class="header__menuItem"><a href="#">Liên hệ</a></li>
-          <li class="header__menuItem"><a href="#">Giới thiệu</a></li>
-          <li class="header__contact hide-on-pc">
-            <div class="header__contact-item">
-              <i class="fas fa-phone-volume"></i>
-              0976.638.789
-            </div>
-            <div class="header__contact-item">
-              <i class="fab fa-facebook-f"></i>
-              facebook.com/tuanln1990
-            </div>
-            <div class="header__contact-item">
-              <i class="fas fa-envelope"></i>
-              tuanln1990@gmail.com
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="header_pc hide-on-mobile hide-on-tablet">
-    <div class="header_pc__top">
-      <div class="grid wide">
-        <div class="header_pc__topChild">
-          <div class="header_pc__logo_box">
-            <a href="index.html" class="header_pc__logo">
-            </a>
-          </div>
-          <div class="header_pc__searchbox">
-            <input class="header_pc__searchInput" type="text">
-            <i class="fas fa-search header_pc__searchLogo"></i>
-          </div>
-          <div class="header_pc_contactInfo">
-            <p>Hotline | 0976638789 - Email | tuanln1990@gmail.com</p>
-          </div>
-        </div>
-        </div>
-    </div>
-    <div class="header_pc__menu">
-      <div class="grid wide">
-        <ul class="header_pc__menulist">
-          <li class="header_pc__menuitem"><a href="#" class="header_pc_menuitem_link">Định vị xe máy</a></li>
-          <li class="header_pc__menuitem"><a href="vtracking.html" class="header_pc_menuitem_link">Định vị ô tô (hộp đen)</a></li>
-          <li class="header_pc__menuitem"><a href="#" class="header_pc_menuitem_link">Dịch vụ khác</a></li>
-          <li class="header_pc__menuitem"><a href="#" class="header_pc_menuitem_link">Phụ kiện đi kèm</a></li>
-          <li class="header_pc__menuitem"><a href="#" class="header_pc_menuitem_link">Liên hệ</a></li>
-          <li class="header_pc__menuitem"><a href="#" class="header_pc_menuitem_link">Giới thiệu</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="grid wide">
-    <!-- Cover -->
-    <div class="row m-no-gutters product__header">
-    <div class="col m-12 t-6 l-6">
-        <div class="product__cover">
-                
-        </div>
-    </div>
-    <div class="col m-12 t-6 l-6">
-        <div class="product__introduce">
-          <h1 class="product__title">Vtracking - Dịch vụ quản lý giám sát</h1>
-          <div class="product__introduce_paragraph">
-            <p>
-              Dịch vụ V-Tracking là dịch vụ quản lý, giám sát phương tiện vận tải thông qua mạng di động Viettel và hệ thống định vị toàn cầu GPS.
-            </p>
-            <p class="UpperBold">
-              dịch vụ vtracking bao gồm
-            </p>
-            <p>
-              Thiết bị giám sát hành trìnhSIM Viettel lắp trong thiết bịPhần mềm giám sát, sử dụng thông qua website hoặc ứng dụng trên điện thoại (V-Tracking).
-            </p>
-          </div>
-          <div class="product__hotline">
-            Hotline
-            <i class="product__hotline_phone fas fa-phone-volume"></i>
-            0976638789
-          </div>
-          <div class="mainButton product__header_btn">
-            Nhận tư vấn
-          </div>
+          <ul class="header__menuList">
+            <li class="header__menuItem"><a href="#">Trang chủ</a></li>
+            <li class="header__menuItem"><a href="#">Định vị xe máy</a></li>
+            <li class="header__menuItem">
+              <a href="vtracking.html">Định vị ô tô (Hộp đen)</a>
+            </li>
+            <li class="header__menuItem">
+              <a href="#">
+                Sản phẩm dịch vụ Viettel khác
+              </a>
+            </li>
+            <li class="header__menuItem"><a href="#">Phụ kiện đi kèm</a></li>
+            <li class="header__menuItem"><a href="#">Liên hệ</a></li>
+            <li class="header__menuItem"><a href="#">Giới thiệu</a></li>
+            <li class="header__contact hide-on-pc">
+              <div class="header__contact-item">
+                <i class="fas fa-phone-volume"></i>
+                0976.638.789
+              </div>
+              <div class="header__contact-item">
+                <i class="fab fa-facebook-f"></i>
+                facebook.com/tuanln1990
+              </div>
+              <div class="header__contact-item">
+                <i class="fas fa-envelope"></i>
+                tuanln1990@gmail.com
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="product_tab">
-      <h3 class="product__tabItem product__tabItem_active hide-on-pc">
-        Tính năng
-      </h3>
-      <h3 class="product__tabItem hide-on-pc">
-        Bảng giá
-      </h3>
+    <div class="header_pc hide-on-mobile hide-on-tablet">
+      <div class="header_pc__top">
+        <div class="grid wide">
+          <div class="header_pc__topChild">
+            <div class="header_pc__logo_box">
+              <a href="index.html" class="header_pc__logo"> </a>
+            </div>
+            <div class="header_pc__searchbox">
+              <input class="header_pc__searchInput" type="text" />
+              <i class="fas fa-search header_pc__searchLogo"></i>
+            </div>
+            <div class="header_pc_contactInfo">
+              <p>Hotline | 0976638789 - Email | tuanln1990@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_pc__menu">
+        <div class="grid wide">
+          <ul class="header_pc__menulist">
+            <li class="header_pc__menuitem">
+              <a href="#" class="header_pc_menuitem_link">Định vị xe máy</a>
+            </li>
+            <li class="header_pc__menuitem">
+              <a href="vtracking.html" class="header_pc_menuitem_link"
+                >Định vị ô tô (hộp đen)</a
+              >
+            </li>
+            <li class="header_pc__menuitem">
+              <a href="#" class="header_pc_menuitem_link">Dịch vụ khác</a>
+            </li>
+            <li class="header_pc__menuitem">
+              <a href="#" class="header_pc_menuitem_link">Phụ kiện đi kèm</a>
+            </li>
+            <li class="header_pc__menuitem">
+              <a href="#" class="header_pc_menuitem_link">Liên hệ</a>
+            </li>
+            <li class="header_pc__menuitem">
+              <a href="#" class="header_pc_menuitem_link">Giới thiệu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-        <div class="product__container product__container-active">
-          <h3 class="product__content_mainTitle UpperBold hide-on-mobile hide-on-tablet">
-            tính năng
-          </h3>
-          <div class="product__contentBox row m-no-gutters">
-              <div class="col m-12 t-6 l-4">
-                <div class="product__content">
-                  <div class="product__content_title">
-                    <i class="fas fa-map-marked"></i>
-                    Giám sát vị trí
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện thời.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin lái xe,…                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Tần suất cập nhật dữ liệu: 10s/lần.                            
-                  </div>
-                </div>
-              </div>
-              <div class="col m-12 t-6 l-4">
-                <div class="product__content">
-                  <div class="product__content_title">
-                    <i class="fas fa-map-marked"></i>
-                    Giám sát vị trí
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện thời.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin lái xe,…                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Tần suất cập nhật dữ liệu: 10s/lần.                            
-                  </div>
-                </div>
-              </div>
-              <div class="col m-12 t-6 l-4">
-                <div class="product__content">
-                  <div class="product__content_title">
-                    <i class="fas fa-map-marked"></i>
-                    Giám sát vị trí
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện thời.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin lái xe,…                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Tần suất cập nhật dữ liệu: 10s/lần.                            
-                  </div>
-                </div>
-              </div>
-              <div class="col m-12 t-6 l-4">
-                <div class="product__content">
-                  <div class="product__content_title">
-                    <i class="fas fa-map-marked"></i>
-                    Giám sát vị trí
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện thời.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin lái xe,…                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Tần suất cập nhật dữ liệu: 10s/lần.                            
-                  </div>
-                </div>
-              </div>
-              <div class="col m-12 t-6 l-4">
-                <div class="product__content">
-                  <div class="product__content_title">
-                    <i class="fas fa-map-marked"></i>
-                    Giám sát vị trí
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện thời.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin lái xe,…                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Tần suất cập nhật dữ liệu: 10s/lần.                            
-                  </div>
-                </div>
-              </div>
-              <div class="col m-12 t-6 l-4">
-                <div class="product__content">
-                  <div class="product__content_title">
-                    <i class="fas fa-map-marked"></i>
-                    Giám sát vị trí
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện thời.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy, trạng thái điều hòa, thông tin lái xe,…                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.                            
-                  </div>
-                  <div class="product__content_row">
-                    <i class="greenColor fas fa-check-circle"></i>
-                    Tần suất cập nhật dữ liệu: 10s/lần.                            
-                  </div>
-                </div>
-              </div>
+    <div class="grid wide">
+      <!-- Cover -->
+      <div class="row m-no-gutters product__header">
+        <div class="col m-12 t-6 l-6">
+          <div class="product__cover"></div>
+        </div>
+        <div class="col m-12 t-6 l-6">
+          <div class="product__introduce">
+            <h1 class="product__title">Vtracking - Dịch vụ quản lý giám sát</h1>
+            <div class="product__introduce_paragraph">
+              <p>
+                Dịch vụ V-Tracking là dịch vụ quản lý, giám sát phương tiện vận
+                tải thông qua mạng di động Viettel và hệ thống định vị toàn cầu
+                GPS.
+              </p>
+              <p class="UpperBold">
+                dịch vụ vtracking bao gồm
+              </p>
+              <p>
+                Thiết bị giám sát hành trìnhSIM Viettel lắp trong thiết bịPhần
+                mềm giám sát, sử dụng thông qua website hoặc ứng dụng trên điện
+                thoại (V-Tracking).
+              </p>
+            </div>
+            <div class="product__hotline">
+              Hotline
+              <i class="product__hotline_phone fas fa-phone-volume"></i>
+              0976638789
+            </div>
+            <div class="mainButton product__header_btn">
+              Nhận tư vấn
+            </div>
           </div>
         </div>
-        <div class="product__container">
-          <h3 class="product__price_title UpperBold hide-on-mobile hide-on-tablet">
-            bảng giá
-          </h3>
-          <div class="product__price_tabs">
-            <div class="product__price_tab product__price_tab-active">
-              Kèm thiết bị
-            </div>
-            <div class="product__price_tab">
-              Không kèm thiết bị
-            </div>
-          </div>
-          <div class="product__price_contentBox row m-no-gutters">
-            <div class="col m-12 t-6 l-4">
-              <div class="product__price_content_title UpperBold">
-                gói vtr12t
+      </div>
+      <div class="product_tab">
+        <h3 class="product__tabItem product__tabItem_active hide-on-pc">
+          Tính năng
+        </h3>
+        <h3 class="product__tabItem hide-on-pc">
+          Bảng giá
+        </h3>
+      </div>
+      <div class="product__container product__container-active">
+        <h3
+          class="product__content_mainTitle UpperBold hide-on-mobile hide-on-tablet"
+        >
+          tính năng
+        </h3>
+        <div class="product__contentBox row m-no-gutters">
+          <div class="col m-12 t-6 l-4">
+            <div class="product__content">
+              <div class="product__content_title">
+                <i class="fas fa-map-marked"></i>
+                Giám sát vị trí
               </div>
-              <div class="product__price_content">
-                <div class="product__price_content_row">Đóng cước trước: <p class="primateColor">24 tháng</p></div>
-                <div class="product__price_content_row">Phí hòa mạng + lắp đặt + thiết bị: <p class="primateColor">Miễn phí</p></div>
-                <div class="product__price_content_row">Giá cước ưu đãi 24 tháng: <p class="primateColor">2.200.000 VNĐ</div>
-                <div class="product__price_content_row">500MB tốc độ 64/64 và 70 SMS</div>
-                <div class="product__price_content_row">
-                  <p class="primateColor">Cước vượt trội:</p>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng: 200đ/ms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Ngoại mạng: 250đ/sms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc tế</div>
-                </div>
-                <div class="twoBorderRadiusbtn">Đăng ký</div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện
+                thời.
               </div>
-            </div>
-            <div class="col m-12 t-6 l-4">
-              <div class="product__price_content_title UpperBold">
-                gói vtr12t
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy,
+                trạng thái điều hòa, thông tin lái xe,…
               </div>
-              <div class="product__price_content">
-                <div class="product__price_content_row">Đóng cước trước: <p class="primateColor">24 tháng</p></div>
-                <div class="product__price_content_row">Phí hòa mạng + lắp đặt + thiết bị: <p class="primateColor">Miễn phí</p></div>
-                <div class="product__price_content_row">Giá cước ưu đãi 24 tháng: <p class="primateColor">2.200.000 VNĐ</div>
-                <div class="product__price_content_row">500MB tốc độ 64/64 và 70 SMS</div>
-                <div class="product__price_content_row">
-                  <p class="primateColor">Cước vượt trội:</p>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng: 200đ/ms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Ngoại mạng: 250đ/sms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc tế</div>
-                </div>
-                <div class="twoBorderRadiusbtn">Đăng ký</div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời
+                gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.
               </div>
-            </div>
-            <div class="col m-12 t-6 l-4">
-              <div class="product__price_content_title UpperBold">
-                gói vtr12t
-              </div>
-              <div class="product__price_content">
-                <div class="product__price_content_row">Đóng cước trước: <p class="primateColor">24 tháng</p></div>
-                <div class="product__price_content_row">Phí hòa mạng + lắp đặt + thiết bị: <p class="primateColor">Miễn phí</p></div>
-                <div class="product__price_content_row">Giá cước ưu đãi 24 tháng: <p class="primateColor">2.200.000 VNĐ</div>
-                <div class="product__price_content_row">500MB tốc độ 64/64 và 70 SMS</div>
-                <div class="product__price_content_row">
-                  <p class="primateColor">Cước vượt trội:</p>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng: 200đ/ms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Ngoại mạng: 250đ/sms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc tế</div>
-                </div>
-                <div class="twoBorderRadiusbtn">Đăng ký</div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Tần suất cập nhật dữ liệu: 10s/lần.
               </div>
             </div>
           </div>
-          <div class="product__price_contentBox row m-no-gutters">
-            <div class="col m-12 t-6 l-4">
-              <div class="product__price_content_title UpperBold">
-                gói vtr12t
+          <div class="col m-12 t-6 l-4">
+            <div class="product__content">
+              <div class="product__content_title">
+                <i class="fas fa-map-marked"></i>
+                Giám sát vị trí
               </div>
-              <div class="product__price_content">
-                <div class="product__price_content_row">Đóng cước trước: <p class="primateColor">24 tháng</p></div>
-                <div class="product__price_content_row">Phí hòa mạng + lắp đặt + thiết bị: <p class="primateColor">Miễn phí</p></div>
-                <div class="product__price_content_row">Giá cước ưu đãi 24 tháng: <p class="primateColor">2.200.000 VNĐ</div>
-                <div class="product__price_content_row">500MB tốc độ 64/64 và 70 SMS</div>
-                <div class="product__price_content_row">
-                  <p class="primateColor">Cước vượt trội:</p>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng: 200đ/ms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Ngoại mạng: 250đ/sms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc tế</div>
-                </div>
-                <div class="twoBorderRadiusbtn">Đăng ký</div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện
+                thời.
               </div>
-            </div>
-            <div class="col m-12 t-6 l-4">
-              <div class="product__price_content_title UpperBold">
-                gói vtr12t
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy,
+                trạng thái điều hòa, thông tin lái xe,…
               </div>
-              <div class="product__price_content">
-                <div class="product__price_content_row">Đóng cước trước: <p class="primateColor">24 tháng</p></div>
-                <div class="product__price_content_row">Phí hòa mạng + lắp đặt + thiết bị: <p class="primateColor">Miễn phí</p></div>
-                <div class="product__price_content_row">Giá cước ưu đãi 24 tháng: <p class="primateColor">2.200.000 VNĐ</div>
-                <div class="product__price_content_row">500MB tốc độ 64/64 và 70 SMS</div>
-                <div class="product__price_content_row">
-                  <p class="primateColor">Cước vượt trội:</p>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng: 200đ/ms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Ngoại mạng: 250đ/sms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc tế</div>
-                </div>
-                <div class="twoBorderRadiusbtn">Đăng ký</div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời
+                gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Tần suất cập nhật dữ liệu: 10s/lần.
               </div>
             </div>
-            <div class="col m-12 t-6 l-4">
-              <div class="product__price_content_title UpperBold">
-                gói vtr12t
+          </div>
+          <div class="col m-12 t-6 l-4">
+            <div class="product__content">
+              <div class="product__content_title">
+                <i class="fas fa-map-marked"></i>
+                Giám sát vị trí
               </div>
-              <div class="product__price_content">
-                <div class="product__price_content_row">Đóng cước trước: <p class="primateColor">24 tháng</p></div>
-                <div class="product__price_content_row">Phí hòa mạng + lắp đặt + thiết bị: <p class="primateColor">Miễn phí</p></div>
-                <div class="product__price_content_row">Giá cước ưu đãi 24 tháng: <p class="primateColor">2.200.000 VNĐ</div>
-                <div class="product__price_content_row">500MB tốc độ 64/64 và 70 SMS</div>
-                <div class="product__price_content_row">
-                  <p class="primateColor">Cước vượt trội:</p>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng: 200đ/ms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Ngoại mạng: 250đ/sms</div>
-                  <div class="product__price_content_rowChild"><i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc tế</div>
-                </div>
-                <div class="twoBorderRadiusbtn">Đăng ký</div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện
+                thời.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy,
+                trạng thái điều hòa, thông tin lái xe,…
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời
+                gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Tần suất cập nhật dữ liệu: 10s/lần.
+              </div>
+            </div>
+          </div>
+          <div class="col m-12 t-6 l-4">
+            <div class="product__content">
+              <div class="product__content_title">
+                <i class="fas fa-map-marked"></i>
+                Giám sát vị trí
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện
+                thời.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy,
+                trạng thái điều hòa, thông tin lái xe,…
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời
+                gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Tần suất cập nhật dữ liệu: 10s/lần.
+              </div>
+            </div>
+          </div>
+          <div class="col m-12 t-6 l-4">
+            <div class="product__content">
+              <div class="product__content_title">
+                <i class="fas fa-map-marked"></i>
+                Giám sát vị trí
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện
+                thời.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy,
+                trạng thái điều hòa, thông tin lái xe,…
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời
+                gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Tần suất cập nhật dữ liệu: 10s/lần.
+              </div>
+            </div>
+          </div>
+          <div class="col m-12 t-6 l-4">
+            <div class="product__content">
+              <div class="product__content_title">
+                <i class="fas fa-map-marked"></i>
+                Giám sát vị trí
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vị trí hiện thời trên bản đồ số và trạng thái hoạt động hiện
+                thời.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Vận tốc, số km đi được, trạng thái đóng mở cửa, tắt mở máy,
+                trạng thái điều hòa, thông tin lái xe,…
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Hiển thị các cảnh báo nóng như SOS, Quá tốc độ, vi phạm thời
+                gian lái xe liên tục, Vi phạm thời gian lái xe trong ngày.
+              </div>
+              <div class="product__content_row">
+                <i class="greenColor fas fa-check-circle"></i>
+                Tần suất cập nhật dữ liệu: 10s/lần.
               </div>
             </div>
           </div>
         </div>
-  </div>    
+      </div>
+      <div class="product__container">
+        <h3
+          class="product__price_title UpperBold hide-on-mobile hide-on-tablet"
+        >
+          bảng giá
+        </h3>
+        <div class="product__price_tabs">
+          <div class="product__price_tab product__price_tab-active">
+            Kèm thiết bị
+          </div>
+          <div class="product__price_tab">
+            Không kèm thiết bị
+          </div>
+        </div>
+        <div class="product__price_contentBox product__price_contentBox-active row m-no-gutters">
+          <div class="col m-12 t-6 l-4">
+            <div class="product__price_content">
+              <div class="product__price_content_title UpperBold">
+                gói vtr12t
+              </div>
+              <div class="product__price_content_row">
+                Đóng cước trước:
+                <span class="primateColor">24 tháng</span>
+              </div>
+              <div class="product__price_content_row">
+                Phí hòa mạng + lắp đặt + thiết bị:
+                <span class="primateColor">Miễn phí</span>
+              </div>
+              <div class="product__price_content_row">
+                Giá cước ưu đãi 24 tháng:
+                <span class="primateColor">2.200.000 VNĐ</span>
+              </div>
+              <div class="product__price_content_row">
+                500MB tốc độ 64/64 và 70 SMS
+              </div>
+              <div class="product__price_content_row">
+                <span class="primateColor">Cước vượt trội:</span>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng:
+                  200đ/ms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Ngoại mạng:
+                  250đ/sms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc
+                  tế
+                </div>
+              </div>
+              <div class="twoBorderRadiusbtn btnProductRegister">Đăng ký</div>
+            </div>
+          </div>
+          <div class="col m-12 t-6 l-4">
+            <div class="product__price_content">
+              <div class="product__price_content_title UpperBold">
+                gói vtr12t
+              </div>
+              <div class="product__price_content_row">
+                Đóng cước trước:
+                <span class="primateColor">24 tháng</span>
+              </div>
+              <div class="product__price_content_row">
+                Phí hòa mạng + lắp đặt + thiết bị:
+                <span class="primateColor">Miễn phí</span>
+              </div>
+              <div class="product__price_content_row">
+                Giá cước ưu đãi 24 tháng:
+                <span class="primateColor">2.200.000 VNĐ</span>
+              </div>
+              <div class="product__price_content_row">
+                500MB tốc độ 64/64 và 70 SMS
+              </div>
+              <div class="product__price_content_row">
+                <span class="primateColor">Cước vượt trội:</span>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng:
+                  200đ/ms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Ngoại mạng:
+                  250đ/sms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc
+                  tế
+                </div>
+              </div>
+              <div class="twoBorderRadiusbtn btnProductRegister">Đăng ký</div>
+            </div>
+          </div>
+          <div class="col m-12 t-6 l-4">
+            <div class="product__price_content">
+              <div class="product__price_content_title UpperBold">
+                gói vtr12t
+              </div>
+              <div class="product__price_content_row">
+                Đóng cước trước:
+                <span class="primateColor">24 tháng</span>
+              </div>
+              <div class="product__price_content_row">
+                Phí hòa mạng + lắp đặt + thiết bị:
+                <span class="primateColor">Miễn phí</span>
+              </div>
+              <div class="product__price_content_row">
+                Giá cước ưu đãi 24 tháng:
+                <span class="primateColor">2.200.000 VNĐ</span>
+              </div>
+              <div class="product__price_content_row">
+                500MB tốc độ 64/64 và 70 SMS
+              </div>
+              <div class="product__price_content_row">
+                <span class="primateColor">Cước vượt trội:</span>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng:
+                  200đ/ms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Ngoại mạng:
+                  250đ/sms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc
+                  tế
+                </div>
+              </div>
+              <div class="twoBorderRadiusbtn btnProductRegister">Đăng ký</div>
+            </div>
+          </div>
+        </div>
+        <div class="product__price_contentBox row m-no-gutters">
+          <div class="col m-12 t-6 l-4">
+            <div class="product__price_content">
+              <div class="product__price_content_title UpperBold">
+                gói vtr6t
+              </div>
+              <div class="product__price_content_row">
+                Đóng cước trước:
+                <span class="primateColor">24 tháng</span>
+              </div>
+              <div class="product__price_content_row">
+                Phí hòa mạng + lắp đặt + thiết bị:
+                <span class="primateColor">Miễn phí</span>
+              </div>
+              <div class="product__price_content_row">
+                Giá cước ưu đãi 24 tháng:
+                <span class="primateColor">2.200.000 VNĐ</span>
+              </div>
+              <div class="product__price_content_row">
+                500MB tốc độ 64/64 và 70 SMS
+              </div>
+              <div class="product__price_content_row">
+                <span class="primateColor">Cước vượt trội:</span>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng:
+                  200đ/ms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Ngoại mạng:
+                  250đ/sms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc
+                  tế
+                </div>
+              </div>
+              <div class="twoBorderRadiusbtn btnProductRegister">Đăng ký</div>
+            </div>
+          </div>
+          <div class="col m-12 t-6 l-4">
+            <div class="product__price_content">
+              <div class="product__price_content_title UpperBold">
+                gói vtr12t
+              </div>
+              <div class="product__price_content_row">
+                Đóng cước trước:
+                <span class="primateColor">24 tháng</span>
+              </div>
+              <div class="product__price_content_row">
+                Phí hòa mạng + lắp đặt + thiết bị:
+                <span class="primateColor">Miễn phí</span>
+              </div>
+              <div class="product__price_content_row">
+                Giá cước ưu đãi 24 tháng:
+                <span class="primateColor">2.200.000 VNĐ</span>
+              </div>
+              <div class="product__price_content_row">
+                500MB tốc độ 64/64 và 70 SMS
+              </div>
+              <div class="product__price_content_row">
+                <span class="primateColor">Cước vượt trội:</span>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng:
+                  200đ/ms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Ngoại mạng:
+                  250đ/sms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc
+                  tế
+                </div>
+              </div>
+              <div class="twoBorderRadiusbtn btnProductRegister">Đăng ký</div>
+            </div>
+          </div>
+          <div class="col m-12 t-6 l-4">
+            <div class="product__price_content">
+              <div class="product__price_content_title UpperBold">
+                gói dbiz-80
+              </div>
+              <div class="product__price_content_row">
+                Đóng cước trước:
+                <span class="primateColor">24 tháng</span>
+              </div>
+              <div class="product__price_content_row">
+                Phí hòa mạng + lắp đặt + thiết bị:
+                <span class="primateColor">Miễn phí</span>
+              </div>
+              <div class="product__price_content_row">
+                Giá cước ưu đãi 24 tháng:
+                <span class="primateColor">2.200.000 VNĐ</span>
+              </div>
+              <div class="product__price_content_row">
+                500MB tốc độ 64/64 và 70 SMS
+              </div>
+              <div class="product__price_content_row">
+                <span class="primateColor">Cước vượt trội:</span>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> 2.5đ/10KBmạng:
+                  200đ/ms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Ngoại mạng:
+                  250đ/sms
+                </div>
+                <div class="product__price_content_rowChild">
+                  <i class="greenColor fas fa-check-circle"></i> Chặn SMS quốc
+                  tế
+                </div>
+              </div>
+              <div class="twoBorderRadiusbtn btnProductRegister">Đăng ký</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="grid wide">    
+        <div class="footer_logo">
+        </div>
+        <div class="row m-no-gutters">
+          <div class="footer__introduce col m-6 t-6 l-3">
+            <ul class="footer__List">
+              <h3 class="footer__title">
+                Giới thiệu
+              </h3>
+              <li class="footer__item"><a href="#">Giới thiệu chung</a></li>
+              <li class="footer__item"><a href="#">Mạng lưới toàn cầu</a></li>
+              <li class="footer__item"><a href="#">Những dấu ấn</a></li>
+            </ul>
+          </div>
+          <div class="footer__folow col m-6 t-6 l-3">
+            <ul class="footer__List">
+              <h3 class="footer__title">
+                Theo dõi chúng tôi
+              </h3>
+              <li class="footer__item footer__social"><a href="https://www.facebook.com/Gi%C3%A1m-s%C3%A1t-%C4%91%E1%BB%8Bnh-v%E1%BB%8B-%C3%B4-t%C3%B4-xe-m%C3%A1y-Viettel-Gia-Lai-2193587774093608"><i class="fab fa-facebook"></i></a></li>
+              <li class="footer__item footer__social">
+                <a href="#">
+                  <svg version="1.1" width="3rem" height="3rem" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512.007 512.007" style="enable-background:new 0 0 512.007 512.007;" xml:space="preserve">
+             <circle style="fill:#E6EFF4;" cx="256.003" cy="256.003" r="256.003"/>
+             <path style="fill:#B6D1DD;" d="M385.581,107.256L385.581,107.256c-5.101-5.102-12.148-8.258-19.932-8.258H146.354
+               c-15.567,0-28.187,12.619-28.187,28.187v219.295c0,7.785,3.156,14.832,8.258,19.933l0,0l145.105,145.105
+               C405.682,503.489,512.001,392.169,512.001,256c0-8.086-0.393-16.081-1.126-23.976L385.581,107.256z"/>
+             <path style="fill:#41A0D7;" d="M365.647,98.999H146.353c-15.567,0-28.187,12.619-28.187,28.187v219.294
+               c0,15.567,12.619,28.187,28.187,28.187h43.971v38.334l53.377-38.334h121.946c15.567,0,28.187-12.619,28.187-28.187V127.185
+               C393.834,111.618,381.215,98.999,365.647,98.999z"/>
+             <path style="fill:#FFFFFF;" d="M393.834,340.942v-44.17c-5.73-5.85-13.714-9.484-22.55-9.484h-64.188l86.738-118.175V131.24
+               c-4.466-3.988-10.304-6.31-16.5-6.31h-131.2c-17.435,0-31.57,14.135-31.57,31.57s14.135,31.57,31.57,31.57h55.168L212,311.089
+               c-5.474,7.539-6.255,17.512-2.024,25.812c4.231,8.3,12.76,13.526,22.077,13.526h139.232
+               C380.121,350.426,388.104,346.792,393.834,340.942z"/>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+             <g>
+             </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__news col m-6 t-6 l-3">
+            <ul class="footer__List">
+              <h3 class="footer__title">
+                Tin tức
+              </h3>
+              <li class="footer__item"><a href="#">Tin tức</a></li>
+              <li class="footer__item"><a href="#">Công nghệ</a></li>
+            </ul>
+          </div>
+          <div class="footer__support col m-6 t-6 l-3">
+            <ul class="footer__List">
+              <h3 class="footer__title">
+                Hỗ trợ
+              </h3>
+              <li class="footer__item"><a href="#">Hướng dẫn sử dụng</a></li>
+              <li class="footer__item"><a href="#">Câu hỏi thường gặp</a></li>
+              <li class="footer__item"><a href="#">Tài nguyên</a></li>
+            </ul>
+          </div>
+          <div class="footer__contact col m-12 t-6 l-6 l-o-3">
+            <ul class="footer__List">
+            <h3 class="footer__title">
+              Liên hệ
+            </h3>
+              <li class="footer__item">87-89 Nguyễn Tất Thành, TP Pleiku, Tỉnh Gia Lai</li>
+              <li class="footer__item">Điện thoại : 0976.638.789</li>
+              <li class="footer__item">Email: tuanln2@viettel.com.vn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/mainproduct.js"></script>
-</body>
+  </body>
 </html>

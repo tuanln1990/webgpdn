@@ -1,6 +1,7 @@
 @import "base.css";
 @import "components/header.css";
 @import "components/buttons.css";
+@import "components/footer.css";
 
 /* CSS product cover */
 .product__header {
@@ -64,8 +65,12 @@
 .product__container-active {
     display: block
 }
-.product__content_mainTitle {
-
+.product__content_mainTitle,
+.product__price_title {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
 }
 .product__contentBox {
 
@@ -87,4 +92,63 @@
     font-size: 1.4rem;
     color: var(--text-color);
     margin-top: 1.5rem;
+}
+
+/* CSS product price */
+
+.product__price_tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--text-title-color);
+}
+.product__price_tab {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .1s;
+}
+.product__price_contentBox {
+    display: none;
+}
+.product__price_contentBox-active {
+    display: flex;
+}
+.product__price_content_title {
+    color: var(--text-title-color);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.product__price_content {
+    margin-top: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 0 0px 15px 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-bottom: none;
+}
+.product__price_content_row {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    color : var(--text-color);
+}
+.product__price_content_rowChild {
+    padding: 0 2rem;
+}
+
+.product__price_tab-active {
+    color: var(--text-title-color);
+    font-weight: bold;
+}
+
+.btnProductRegister { 
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    border-radius: 0 0px 12px 12px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.btnProductRegister:hover {
+    color: var(--text-title-color);
 }

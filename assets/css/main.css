@@ -1,7 +1,6 @@
 @import "base.css";
 @import "components/header.css";
-/* CSS Slide Header */
-
+@import "components/footer.css";
 
   /* CSS MainProduct */
  
@@ -368,38 +367,4 @@
     color: var(--text-content-color);
 }
 
-/* CSS footer */
-.footer {
-    background-color: #373737;
-}
-.footer_logo {
-    height: 5rem;
-    width: 6.5rem;
-    background-image: url(/assets/images/logo.png);
-    background-size: cover;
-    margin : 2rem auto;
-}
 
-.footer__title {
-    color: var(--white-color);
-}
-.footer__list {
-    color: var(--white-color);
-}
-.footer__item {
-    color : var(--white-color);
-    list-style: none;
-}
-.footer__item > a {
-    color : var(--white-color);
-    text-decoration: none;
-}
-.footer__social {
-    font-size: 3rem;
-    margin-top: 1rem;
-}
-
-.footer__contact {
-    /* text-align: center; */
-    font-size: 1.5;
-}
