@@ -12,6 +12,12 @@
     background-size: cover;
     padding-top: 60%;
 }
+.product__cover1 {
+    background-image: url(/assets/images/smartmotor.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 60%;
+}
 .product__introduce {
 
 }
@@ -59,7 +65,7 @@
 
 
 .product__container {
-    background-color: #F3F7F8;
+    /* background-color: #F3F7F8; */
     display: none
 }
 .product__container-active {
@@ -71,12 +77,20 @@
     text-align: center;
     font-size: 3rem;
     font-weight: normal;
+    background-color: var(--white-color);
 }
 .product__contentBox {
 
 }
 .product__content {
-
+    background-color: #F3F7F8;
+    height: 100%;
+}
+.product__content_title > i {
+    font-size: 4rem;
+}
+.product__content_title > * {
+    margin-bottom: 1.5rem;
 }
 .product__content_title {
     display: flex;
@@ -85,7 +99,7 @@
     align-items: center;
     font-size: 2rem;
     color: var(--text-title-color);
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 .product__content_row {
     padding: 0 3rem;
@@ -126,6 +140,7 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     border-bottom: none;
+    background-color: #F3F7F8;
 }
 .product__price_content_row {
     padding: 0 2rem;

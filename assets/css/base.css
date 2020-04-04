@@ -30,3 +30,7 @@ html {
 .greenColor {
     color: green;
 }
+
+.primateColor {
+    color: var(--primate-color);
+}
