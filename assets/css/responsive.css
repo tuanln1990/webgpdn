@@ -13,6 +13,9 @@
     .product__title {
         margin-top: 0;
     }
+    .accessory__description_content {
+        width: 60%;
+    }
 
 }
 /* tablet and PC */
@@ -24,6 +27,13 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    .accessory__description_content {
+        padding-left: 4rem !important;
+    }
+    .accessory__description_title {
+        padding-left: 4rem !important;
+    }
+    
 }
 
 /*  PC low resolution */
@@ -56,5 +66,8 @@
     }
     .product__container {
         display: block !important;
+    }
+    .accessory__description_content {
+        width: 40%;
     }
 }

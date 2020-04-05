@@ -4,9 +4,6 @@
 @import "components/footer.css";
 
 /* CSS product cover */
-.product__header {
-
-}
 .product__cover {
     background-image: url(/assets/images/vtracking\ cover.PNG);
     background-size: cover;

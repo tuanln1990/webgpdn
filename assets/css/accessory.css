@@ -1,0 +1,112 @@
+@import "base.css";
+@import "components/header.css";
+@import "components/footer.css";    
+@import "components/buttons.css";
+
+/* Cover */
+.accessory {
+    
+}
+.accessory__coverBox {
+    margin-top: 1.5rem;
+}
+.accessory__cover {
+    border: 1px solid rgba(0,0,0,.5);
+    padding-top: 100%;
+    background-image: url(/assets/images/anten_gps_v1_large.png);
+    background-size: cover;
+    background-position: center;
+}
+.accessory__cover-1 {
+    background-image: url(/assets/images/gsm.png);
+}
+.accessory__coverItems {
+    display: flex;
+}
+.accessory__coverItem {
+    border: 1px solid rgba(0,0,0,.5);
+    width: 20%;
+    padding-top: 20%;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    background-size: cover;
+    cursor: pointer;
+    transition: border .3s;
+}
+.accessory__coverItem-1 {
+    border: 1px solid rgba(0,0,0,.5);
+    width: 20%;
+    padding-top: 20%;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    background-size: cover;
+    cursor: pointer;
+    transition: border .3s;
+    background-image: url(/assets/images/gsm.png);
+}
+
+.accessory__coverItem:nth-child(1) {
+    background-image: url(/assets/images/anten_gps_v1_large.png);
+}
+.accessory__coverItem:nth-child(2) {
+    background-image: url(/assets/images/gps2.jpg);
+}
+.accessory__coverItem-active {
+    border: 1.5px solid var(--text-title-color);
+}
+
+/* Info */
+.accessory_Info {
+    color: var(--text-color);
+}
+.accessory_info_row {
+    font-size: 1.5rem;
+}
+
+.accessory_info_row > * {
+    margin-top: 1.5rem;
+}
+
+.accessory__btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+}
+.accessory_name {
+
+}
+.accessory_statusRow {
+
+}
+.accessory_status {
+
+}
+.accessory__priceBox {
+    font-size: 2rem;
+}
+.accessory__price {
+
+}
+.accessory__moreInfo {
+
+}
+.accessory_info_row {
+
+}
+
+
+/* Description */
+.accessory__description {
+    border: 1px solid var(--text-title-color);
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    
+}
+.accessory__description_title {
+    border-bottom: 1px solid var(--text-title-color);
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.accessory__description_content {
+    padding-left: 1rem;
+}
