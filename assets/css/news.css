@@ -1,0 +1,74 @@
+@import "base.css";
+@import "components/header.css";
+@import "components/footer.css";
+
+
+.news__cover {
+    height: 30rem;
+    background-image: url(/assets/images/news-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.news__overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+}
+.news__title {
+    max-width: 77.5rem;
+    margin : auto;
+    line-height: 6vw;
+    font-size: 4.5vw;
+    text-align: center;
+    font-weight: 500;
+}
+.news__related_label {
+    text-align: center;
+}
+.news__content {
+    font-size: 1.6rem;
+    padding: 0 4px;   
+}
+.news__content > img {
+    width : 100%;
+}
+.news__img_title {
+    text-align: center;
+}
+.news_relatedItemBox {
+    margin-top: 2rem;
+}
+.news_relatedItem {
+    border: 1px solid rgba(0, 0, 0, .3);
+    position: relative;
+    height: 100%;
+}
+.news__order {
+    position: absolute;
+    font-size: 10rem;
+    top: 0;
+    transform: translateY(100%);
+    font-weight: 400;
+    color: rgba(0, 0, 0, .3)
+}
+.news__related__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.news__related_content {
+
+}
+.news_relatedItem {
+
+}
+.news__order {
+
+}
+.news__related__title {
+
+}
+.news__related_content {
+
+}
