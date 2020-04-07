@@ -2,6 +2,7 @@
 @import "components/header.css";
 @import "components/buttons.css";
 @import "components/footer.css";
+@import "components/textbox.css";
 
 /* CSS product cover */
 .product__cover {
@@ -42,6 +43,19 @@
     margin-bottom: 3rem;
 }
 
+.product__header_btn:active + .product__phone_customer {
+    opacity: 1;
+    width: 30rem;
+    max-width: 100%;
+}
+
+.product__phone_customer {
+    width: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s;
+    display: block;
+}
 /* CSS content */
 .product_tab {
     display: flex;
@@ -164,3 +178,4 @@
 .btnProductRegister:hover {
     color: var(--text-title-color);
 }
+

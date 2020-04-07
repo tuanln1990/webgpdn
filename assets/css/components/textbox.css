@@ -1,0 +1,7 @@
+.mainTextbox {
+    outline: none;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--primate-color);
+    font-size: 2rem;
+}
