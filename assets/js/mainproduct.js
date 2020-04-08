@@ -44,11 +44,12 @@ btnPriceTabs.forEach(btnPriceTab => {
 
 
 // Event nhập số điện thoại cần tư vấn
+
 var phoneCustomerIput = document.querySelector('.product__phone_customer');
-phoneCustomerIput.addEventListener('keyup',function(event) {
-    if(event.keyCode == 13) {
+var productCusomerCheck = document.querySelector('.product__phone_customer_check');function phoneCustomerEvent() {
+    productIntroduce = document.querySelector('.product__introduce');
+        
         // Show thank you
-        productIntroduce = document.querySelector('.product__introduce');
         var newItem = document.createElement('p');
         newItem.style.color = 'var(--primate-color';
         newItem.style.fontSize = '1.5rem';
@@ -66,5 +67,10 @@ phoneCustomerIput.addEventListener('keyup',function(event) {
         // hide textbox
         var textBox = document.querySelector('.product__phone_customer');
         textBox.style.display = 'none';
+}
+phoneCustomerIput.addEventListener('keyup',function(event) {
+    if(event.keyCode == 13) {
+        phoneCustomerEvent();
     }
 });
+productCusomerCheck.addEventListener('click',phoneCustomerEvent);

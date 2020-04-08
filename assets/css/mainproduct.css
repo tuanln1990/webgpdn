@@ -46,11 +46,18 @@
 .product__header_btn_status {
     display: none;
 }
+.product__phone_customerBox {
+    position: relative;
+}
 .product__phone_customer:focus {
     opacity: 1;
-    width: 30rem;
+    width: 32rem;
     max-width: 100%;
     pointer-events: fill;
+}
+.product__phone_customer:focus + .product__phone_customer_check {
+    pointer-events: auto;
+    opacity : 1;
 }
 
 .product__phone_customer {
@@ -59,6 +66,29 @@
     pointer-events: none;
     transition: all .2s;
     display: block;
+}
+
+.product__phone_customer_check {
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    left: 29rem;
+    font-size: 2.5rem;
+    color: var(--primate-color);
+    opacity: 0;
+    cursor: pointer;
+    animation: checkAnimation .2s;
+}
+@keyframes checkAnimation {
+    0% {
+        pointer-events: auto;
+    }
+    90% {
+        pointer-events: auto;
+    }
+    100% {
+        pointer-events: none;
+    }
 }
 /* CSS content */
 .product_tab {
