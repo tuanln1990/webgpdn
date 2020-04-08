@@ -41,3 +41,30 @@ btnPriceTabs.forEach(btnPriceTab => {
         });
     });
 });
+
+
+// Event nhập số điện thoại cần tư vấn
+var phoneCustomerIput = document.querySelector('.product__phone_customer');
+phoneCustomerIput.addEventListener('keyup',function(event) {
+    if(event.keyCode == 13) {
+        // Show thank you
+        productIntroduce = document.querySelector('.product__introduce');
+        var newItem = document.createElement('p');
+        newItem.style.color = 'var(--primate-color';
+        newItem.style.fontSize = '1.5rem';
+        newItem.style.fontStyle = 'italic';
+        newItem.style.fontWeight = 'bold';
+        newItem.style.paddingLeft = '1.5rem';
+        newItem.textContent = 'Cảm ơn bạn đã quan tâm, chúng tôi sẽ liên hệ với bạn sớm';
+        productIntroduce.appendChild(newItem);
+
+        // disable button
+        var btn = document.querySelector('.product__header_btn');
+        btn.classList.remove('mainButton');
+        btn.classList.add('mainButton-disable');
+
+        // hide textbox
+        var textBox = document.querySelector('.product__phone_customer');
+        textBox.style.display = 'none';
+    }
+});

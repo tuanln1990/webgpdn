@@ -8,6 +8,16 @@
     transition: color .5s;
 }
 
+.mainButton-disable {
+    background-color: #EEE;
+    display: inline-block;
+    font-size: 2rem;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    color: #aaa;
+    pointer-events: none;
+}
+
 .mainButton:hover {
     color: var(--text-title-color);
     cursor: pointer;

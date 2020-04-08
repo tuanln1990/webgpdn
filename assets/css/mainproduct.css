@@ -43,10 +43,14 @@
     margin-bottom: 3rem;
 }
 
-.product__header_btn:active + .product__phone_customer {
+.product__header_btn_status {
+    display: none;
+}
+.product__phone_customer:focus {
     opacity: 1;
     width: 30rem;
     max-width: 100%;
+    pointer-events: fill;
 }
 
 .product__phone_customer {
@@ -178,4 +182,3 @@
 .btnProductRegister:hover {
     color: var(--text-title-color);
 }
-
