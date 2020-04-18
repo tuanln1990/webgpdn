@@ -1,0 +1,25 @@
+.register__container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.register__form{
+    width: 50rem;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    padding: 1.5rem;
+}
+
+.register__form > * {
+    display: flex;
+    margin-top: 1.5rem;
+}

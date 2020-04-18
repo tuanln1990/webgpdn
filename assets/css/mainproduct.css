@@ -3,6 +3,7 @@
 @import "components/buttons.css";
 @import "components/footer.css";
 @import "components/textbox.css";
+@import "components/register.css";
 
 /* CSS product cover */
 .product__cover {
