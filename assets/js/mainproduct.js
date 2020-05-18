@@ -50,6 +50,18 @@ var phoneCustomerIput = document.querySelector('.product__phone_customer');
 var productCusomerCheck = document.querySelector('.product__phone_customer_check');
 function phoneCustomerEvent() {
     productIntroduce = document.querySelector('.product__introduce');
+<<<<<<< HEAD
+    
+        // Show thank you
+        var newItem = document.createElement('p');
+        newItem.style.color = 'var(--primate-color';
+        newItem.style.fontSize = '1.5rem';
+        newItem.style.fontStyle = 'italic';
+        newItem.style.fontWeight = 'bold';
+        newItem.style.paddingLeft = '1.5rem';
+        newItem.textContent = 'Cảm ơn bạn đã quan tâm, chúng tôi sẽ liên hệ với bạn sớm';
+        productIntroduce.appendChild(newItem);
+=======
     var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
     // var mobile = $('#mobile').val();
     if (phoneCustomerIput.value !== '') {
@@ -65,6 +77,7 @@ function phoneCustomerEvent() {
             newItem.style.paddingLeft = '1.5rem';
             newItem.textContent = 'Cảm ơn bạn đã quan tâm, chúng tôi sẽ liên hệ với bạn sớm';
             productIntroduce.appendChild(newItem);
+>>>>>>> b209b24e46c03c307fb6e0463799f9cfe4766591
 
             // disable button
             var btn = document.querySelector('.product__header_btn');
