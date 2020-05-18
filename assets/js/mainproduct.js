@@ -1,4 +1,5 @@
 // Event click tính năng / bảng giá
+
 var btnTabs = document.querySelectorAll('.product__tabItem');
 btnTabs.forEach(btnTab => {
     btnTab.addEventListener('click', function () {
