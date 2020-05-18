@@ -206,6 +206,7 @@
       bottom : 10%;
       left: 50%;
       transform: translateX(-50%);
+      display: flex;
   }
   .header-dot {
       --size-dot : 1.2rem;
@@ -213,10 +214,10 @@
     width: var(--size-dot);
     background-color: #707070;
     border-radius: 50%;
-    display: inline-block;
     margin-left: 1.5rem;
     position: relative;
     cursor: pointer;
+    outline: none;
   }
   
   .header-dot.active {
