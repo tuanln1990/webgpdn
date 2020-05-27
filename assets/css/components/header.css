@@ -189,6 +189,7 @@
     position: absolute;
     font-size: 2rem;
     top: 50%;
+    cursor: pointer;
     font-weight: 100;
   }
   
